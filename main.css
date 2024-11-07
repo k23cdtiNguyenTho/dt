@@ -1,0 +1,197 @@
+/* PHẦN COURSE*/
+p#red-line {
+    display: inline-block;
+    width: 150px;
+    border-bottom: 3px solid red;
+    margin: 20px auto;
+  }
+main .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+main .top {
+    font-family: Arial;
+    text-align: left;
+    margin-bottom: 20px;
+}
+main .top h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color:#040404;
+}
+main .top p {
+    color: #2b6971;
+    margin: 5px 0 0;
+}
+main .cotlon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .cot {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+main .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+main .card img, .card video {
+    width: 100%;
+    height:220px;
+}
+main .card-body {
+    padding: 20px;
+}
+main .card-body h4 {
+    color: #dc3545;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+main .card-body h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+main .card-body p {
+    color: #6c757d;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+main .card-body .btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+main .card-body .btn:hover{
+    background-color: #f0ad4e;
+    color:#333;
+}
+main .card video {
+    display: none;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Phần xử lý video*/
+.media-container {
+    position: relative;
+    width:100%;
+    height:70%;
+    overflow: hidden; 
+}
+
+.media-image {
+    width: 100%;
+    height: 100%;
+    display: block; 
+}
+
+.media-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.media-container:hover .media-image {
+    display: none; 
+}
+
+.media-container:hover .media-video {
+    display: block;
+}
+
+/* hết phần xử lý video */
+/*--------------*/
+/* Phần LECTURERS */
+
+.khoangcach {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+h2 {
+    text-align: left;
+    color: #1d1650;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.caccot {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cot_t {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 230px;
+}
+.cot_t img {
+    width: 100%;
+}
+.cot_t h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+.cot_t p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 15px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    background-color: #f0ad4e;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+.social-icons a i{
+    color:#fff;
+}
+/* hiện  thông tin */
+.cot_t {
+    position: relative; /* Để thông tin có thể được định vị chính xác */
+    display: inline-block; /* Giữ cho ảnh và thông tin nằm cùng nhau */
+}
+.info {
+    display: none; /* Ẩn thông tin ban đầu */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    top: 50%; /* Đặt thông tin ở giữa theo chiều dọc */
+    left: 50%; /* Đặt thông tin ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đẩy thông tin về giữa */
+    text-align: center; /* Căn giữa nội dung */
+}
+.cot_t:hover .info {
+    display: block; /* Hiện thông tin khi rê chuột vào ảnh */
+}
+
